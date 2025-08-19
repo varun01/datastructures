@@ -21,34 +21,22 @@ package com.data.structures.learn.leetcode;
 public class LongestCommonPrefix {
 
     public static void main(String[] args) {
-        long startTime = System.currentTimeMillis();
         String[] strs = {"flower", "flow", "flight"};
-//        System.out.println(longestCommonPrefix(strs));
-        long endTime = System.currentTimeMillis();
+        System.out.println(longestCommonPrefix(strs));
+
+        System.out.println("flower".indexOf("flow"));
     }
 
-    /*private static String longestCommonPrefix(String[] strs) {
-        if (strs.length == 0) {
+    private static String longestCommonPrefix(String[] strs) {
+        if(strs.length == 0)
             return "";
-        } else if (strs.length == 1) {
-            return strs[0];
-        }
-        StringBuilder sb = new StringBuilder();
-        int firstLength = strs[0].length();
-        for (int i = 1; i < strs.length; i++) {
-            int index = 0;
-            int length = Math.min(firstLength, strs[i].length());
-            while (index < firstLength) {
-                if (index < length && startArr[index] != strs[i].charAt(index)) {
-                    startArr[index] = 0;
-                }
-                if (index >= length) {
-                    startArr[index] = 0;
-                }
-                index++;
+
+        String prefix = strs[0];
+        for(int i = 1; i< strs.length; i++) {
+            while (strs[i].indexOf(prefix) != 0) {
+                prefix = prefix.substring(0, prefix.length() - 1);
             }
         }
-
-        return new String(startArr, 0, length);
-    }*/
+        return prefix;
+    }
 }
