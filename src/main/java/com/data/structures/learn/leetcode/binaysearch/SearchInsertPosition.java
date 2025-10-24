@@ -1,4 +1,4 @@
-package com.data.structures.learn.leetcode;
+package com.data.structures.learn.leetcode.binaysearch;
 
 public class SearchInsertPosition {
 
