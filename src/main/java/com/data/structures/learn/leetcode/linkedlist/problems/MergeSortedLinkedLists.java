@@ -1,6 +1,6 @@
-package com.data.structures.learn.linkedlist.problems;
+package com.data.structures.learn.leetcode.linkedlist.problems;
 
-import com.data.structures.learn.linkedlist.SingleLinkedListNode;
+import com.data.structures.learn.leetcode.linkedlist.SingleLinkedListNode;
 
 public class MergeSortedLinkedLists {
 

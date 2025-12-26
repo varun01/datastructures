@@ -1,4 +1,4 @@
-package com.data.structures.learn.linkedlist;
+package com.data.structures.learn.leetcode.linkedlist;
 
 public class SingleLinkedListNode {
     int val;

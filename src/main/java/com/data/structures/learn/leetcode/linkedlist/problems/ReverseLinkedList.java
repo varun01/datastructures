@@ -1,7 +1,7 @@
-package com.data.structures.learn.linkedlist.problems;
+package com.data.structures.learn.leetcode.linkedlist.problems;
 
-import com.data.structures.learn.linkedlist.SingleLinkedListNode;
-import com.data.structures.learn.linkedlist.util.LinkedListUtil;
+import com.data.structures.learn.leetcode.linkedlist.SingleLinkedListNode;
+import com.data.structures.learn.leetcode.linkedlist.util.LinkedListUtil;
 
 public class ReverseLinkedList {
 
@@ -18,11 +18,12 @@ public class ReverseLinkedList {
 
     private static SingleLinkedListNode reverseList(SingleLinkedListNode head) {
         SingleLinkedListNode result = null;
-        while (head != null) {
-            SingleLinkedListNode listNode = new SingleLinkedListNode(head.getVal());
-            listNode.setNext(result);
-            result = listNode;
-            head = head.getNext();
+        SingleLinkedListNode curr = head;
+        while (curr != null) {
+            SingleLinkedListNode temp = curr.getNext();
+            curr.setNext(result);
+            result = curr;
+            curr = temp;
         }
         return result;
     }

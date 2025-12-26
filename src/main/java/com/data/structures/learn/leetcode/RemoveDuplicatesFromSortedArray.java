@@ -1,7 +1,5 @@
 package com.data.structures.learn.leetcode;
 
-import com.data.structures.learn.linkedlist.util.ArrayUtil;
-
 /**
  * Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
  * <p>
@@ -28,26 +26,13 @@ public class RemoveDuplicatesFromSortedArray {
 
     public static void main(String[] args) {
         int[] nums = new int[] {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
-        String s = "asdfasfa";
-        char c = s.charAt(1);
-        System.out.printf("Char:%s, Value: %s%n", (int) c, c);
+        String str = "asdasfasfs";
+        str.indexOf("asd");
         System.out.println(removeDuplicates(nums));
     }
 
     public static int removeDuplicates(int[] nums) {
-        int swapIndex = 1;
-        int temp = 0;
-        for (int i = 2; i < nums.length; i++) {
-            if (nums[swapIndex] != nums[i]) {
-                temp = nums[i];
-                nums[i] = nums[swapIndex];
-                nums[swapIndex] = temp;
-                i++;
-                swapIndex++;
-            }
-        }
-        ArrayUtil.printArray(nums);
-        return swapIndex;
+        return 0;
     }
 
 }

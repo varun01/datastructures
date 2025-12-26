@@ -1,4 +1,4 @@
-package com.data.structures.learn.linkedlist.util;
+package com.data.structures.learn.leetcode.linkedlist.util;
 
 import java.util.StringJoiner;
 
@@ -20,5 +20,13 @@ public class ArrayUtil {
             indexJoiner.add(String.valueOf(i));
         }
         System.out.println("[" + joiner + "]\n[" + indexJoiner + "]");
+    }
+
+    public static void printArray(Object[] array) {
+        StringJoiner joiner = new StringJoiner(",");
+        for (Object j : array) {
+            joiner.add(String.valueOf(j));
+        }
+        System.out.println("[" + joiner + "]");
     }
 }

@@ -1,6 +1,6 @@
 package com.data.structures.learn.algorithms;
 
-import com.data.structures.learn.linkedlist.util.ArrayUtil;
+import com.data.structures.learn.leetcode.linkedlist.util.ArrayUtil;
 
 public class BinarySearch {
 

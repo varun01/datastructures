@@ -1,8 +1,8 @@
-package com.data.structures.learn.linkedlist.util;
+package com.data.structures.learn.leetcode.linkedlist.util;
 
 import java.util.StringJoiner;
 
-import com.data.structures.learn.linkedlist.SingleLinkedListNode;
+import com.data.structures.learn.leetcode.linkedlist.SingleLinkedListNode;
 
 public class LinkedListUtil {
 

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-import com.data.structures.learn.linkedlist.util.ArrayUtil;
+import com.data.structures.learn.leetcode.linkedlist.util.ArrayUtil;
 
 public class TopKFrequentElements {
 

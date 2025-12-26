@@ -1,6 +1,6 @@
 package com.data.structures.learn.leetcode;
 
-import com.data.structures.learn.linkedlist.util.ArrayUtil;
+import com.data.structures.learn.leetcode.linkedlist.util.ArrayUtil;
 
 /**
  * Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
